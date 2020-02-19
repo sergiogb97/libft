@@ -1,0 +1,15 @@
+# Object files
+*.o
+
+# Libraries
+*.a
+
+# Executables
+*.out
+main.c
+
+# Test scripts
+test.sh
+
+# OS generated files
+.DS_Store
