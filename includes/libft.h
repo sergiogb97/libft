@@ -18,15 +18,11 @@
 # include <stdarg.h>
 # include <stdint.h>
 
-/*	---------- LIST STRUCT ---------- */
-
 typedef struct	s_list
 {
 	void			*content;
 	struct s_list	*next;
 }				t_list;
-
-/*	---------- FT_PRINTF STRUCT ---------- */
 
 typedef struct	s_struct
 {
@@ -43,8 +39,6 @@ typedef struct	s_struct
 
 	int			total_pad;
 }				t_struct;
-
-/*	---------- LIBFT ---------- */
 
 void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
@@ -93,13 +87,9 @@ void			ft_lstiter(t_list *lst, void (*f)(void *));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 void (*del)(void *));
 
-/*	---------- GET NEXT LINE ---------- */
-
-# define	BUFFER_SIZE 1
+# define BUFFER_SIZE 1
 
 int				get_next_line(int fd, char **line);
-
-/*	---------- FT_PRINTF ---------- */
 
 int				ft_printf(const char *string, ...);
 
